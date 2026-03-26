@@ -1,0 +1,5 @@
+display_name;region_un;income_group;CLVI;physical_exposure;socio_vulnerability;sp_coverage_rate;protection_gap;gdp_per_capita;life_expectancy;gini;health_exp_gdp;poverty_ratio;wri_score;lack_coping;lack_adaptation
+Central African Republic;Africa;Low income;748;697;8;;335;516161;57408;5624;10656;716;336;6455;7217
+Haiti;Americas;Low income;608;408;809;66;542;2142623;64936;6079;3192;404;967;1543;6885
+Mozambique;Africa;Low income;695;718;672;60;635;656777;63611;439;8501;814;3461;6415;6865
+Somalia;Africa;Low income;596;754;437;0;596;629539;58816;397;3744;;2509;8211;7202
