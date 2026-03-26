@@ -189,7 +189,7 @@ The data points to three structural conclusions:
 
 ## About
 
-**Sarah El Jamal** is a project manager and M&E professional with 11+ years of experience in international development (ILO, Oxfam, Morningstar Sustainalytics), now transitioning into data analysis. She has co-published peer-reviewed research on poverty and social protection and managed portfolios of over USD 180 million in development projects.
+**Sarah El Jamal** is a social-justice driven data analyst, researcher, and project manager with 13+ years of experience in international development (ILO, Oxfam, Morningstar Sustainalytics). She has co-published peer-reviewed research on poverty and social protection and managed portfolios of over USD 180 million in development projects.
 
 This project was completed as part of the Ironhack Data Analysis Bootcamp (March 2026).
 
