@@ -5,7 +5,7 @@
 This project explores the global gap between climate vulnerability and social protection coverage across 192 countries. It was built as the final project for the [Ironhack Data Analysis Bootcamp](https://www.ironhack.com), March 2026.
 
 **Author:** Sarah El Jamal  
-**Tools:** Python · Pandas · Matplotlib · Plotly · Scipy · Tableau Public  
+**Tools:** Python · Pandas · Matplotlib · Plotly · GeoPandas · Scipy · Tableau Public  
 **Data:** 5 public international datasets · 192 countries · 30 variables
 
 ---
@@ -26,10 +26,12 @@ Climate-responsive social protection (CRSP) refers to social protection systems 
 │   ├── 02_index_construction.ipynb    # CLVI and Protection Gap Score construction
 │   ├── 03_hypothesis_testing.ipynb    # Statistical tests for H1–H5
 │   ├── 04_case_studies.ipynb          # Deep dives: Mozambique, Somalia, Haiti, CAR
-│   └── 05_visualisations.ipynb        # All 6 charts
+│   ├── 05_visualisations.ipynb        # All 6 charts (Matplotlib + Plotly)
+│   └── 06_geopandas_maps.ipynb        # Geographic visualisations using GeoPandas
 │
 ├── data/
 │   └── raw/                           # Source datasets (see Data Sources below)
+│                                      # Natural Earth shapefile downloaded automatically on first run
 │
 ├── outputs/
 │   ├── master.csv                     # Merged master dataset
@@ -37,7 +39,8 @@ Climate-responsive social protection (CRSP) refers to social protection systems 
 │   ├── hypothesis_summary.csv         # H1–H5 results
 │   ├── case_studies_table.csv         # Case study profiles
 │   ├── ilo_aggregated.csv             # Aggregated ILO data (Tableau-ready)
-│   └── charts/                        # All visualisation outputs
+│   ├── charts/                        # Plotly and Matplotlib chart outputs
+│   └── geopandas/                     # GeoPandas map outputs (6 maps)
 │
 └── README.md
 ```
@@ -108,7 +111,9 @@ A positive gap means a country is more vulnerable than it is protected. A negati
 
 ## Visualisations
 
-Six charts were produced:
+### Exploratory Data Analysis — Notebooks 04 & 05
+
+Six charts produced using Matplotlib and Plotly:
 
 1. **CLVI World Choropleth** — composite vulnerability scores across 192 countries
 2. **Protection Gap Map** — where vulnerability exceeds provision (and vice versa)
@@ -118,6 +123,21 @@ Six charts were produced:
 6. **Radar Profiles — Red Zone Countries** — vulnerability fingerprints for the 10 countries with the largest protection gap
 
 All charts are available in `outputs/charts/`. The interactive quadrant scatter is available as `chart3_quadrant_scatter.html`.
+
+### Geographic Visualisations — Notebook 06
+
+Six additional maps produced using **GeoPandas + Matplotlib**, offering publication-quality static output with precise layer control:
+
+| Map | File | Description |
+|---|---|---|
+| 1 | `map1_clvi_geopandas.png` | CLVI world choropleth with case study annotations |
+| 2 | `map2_protection_gap_geopandas.png` | Protection gap — diverging red/green scale |
+| 3 | `map3_sp_coverage_geopandas.png` | SP coverage rate by country |
+| 4 | `map4_invisibility_geopandas.png` | H5 — invisible countries coloured by CLVI score |
+| 5 | `map5_redzone_geopandas.png` | Red Zone countries isolated and coloured by protection gap |
+| 6 | `map6_sidebyside_geopandas.png` | CLVI and protection gap as a two-panel figure |
+
+All GeoPandas maps are saved to `outputs/geopandas/`. The Natural Earth 110m shapefile is downloaded automatically on first run and cached in `data/raw/`.
 
 ---
 
@@ -167,13 +187,15 @@ git clone https://github.com/[your-username]/climate-social-protection.git
 cd climate-social-protection
 
 # Install dependencies
-pip install pandas numpy matplotlib plotly scipy scikit-learn
+pip install pandas numpy matplotlib plotly scipy scikit-learn geopandas
 
 # Run notebooks in order
 jupyter notebook notebooks/01_data_loading.ipynb
 ```
 
 Data files should be placed in `data/raw/` before running. Source links are included at the top of notebook 01.
+
+Notebook 06 (`06_geopandas_maps.ipynb`) downloads the Natural Earth shapefile automatically on first run — no manual download required. All GeoPandas maps are saved to `outputs/geopandas/`.
 
 ---
 
@@ -189,7 +211,7 @@ The data points to three structural conclusions:
 
 ## About
 
-**Sarah El Jamal** is a data analyst, researcher and project manager with 13+ years of experience in international development and sustainability (American University of Beirut, ILO, Morningstar Sustainalytics). She has co-published peer-reviewed research on poverty and social protection and managed portfolios of over USD 180 million in development projects.
+**Sarah El Jamal** is a project manager and M&E professional with 11+ years of experience in international development (ILO, Oxfam, Morningstar Sustainalytics), now transitioning into data analysis. She has co-published peer-reviewed research on poverty and social protection and managed portfolios of over USD 180 million in development projects.
 
 This project was completed as part of the Ironhack Data Analysis Bootcamp (March 2026).
 
