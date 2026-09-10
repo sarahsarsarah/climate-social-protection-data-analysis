@@ -65,7 +65,7 @@ Climate-responsive social protection (CRSP) refers to social protection systems 
 
 ### The Climate-Labor Vulnerability Index (CLVI)
 
-A composite index built to compare climate-social vulnerability across 192 countries on a 0–1 scale.
+A composite index built to compare climate-social vulnerability across 192 countries on a 0 to 1 scale.
 
 ```
 CLVI = Physical Exposure (50%) + Socioeconomic Vulnerability (50%)
@@ -83,7 +83,7 @@ All variables normalised using Min-Max scaling before aggregation. Sensitivity a
 Protection Gap = CLVI Score − Normalised SP Coverage Rate
 ```
 
-A positive gap means a country is more vulnerable than it is protected. A negative gap means protection exceeds vulnerability — typical of high-income European countries.
+A positive gap means a country is more vulnerable than it is protected. A negative gap means protection exceeds vulnerability, typical of high-income European countries.
 
 ---
 
@@ -111,7 +111,7 @@ A positive gap means a country is more vulnerable than it is protected. A negati
 
 ## Visualisations
 
-### Exploratory Data Analysis — Notebooks 04 & 05
+### Exploratory Data Analysis: Notebooks 04 & 05
 
 Six charts produced using Matplotlib and Plotly:
 
