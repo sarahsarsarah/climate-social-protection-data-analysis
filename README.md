@@ -1,6 +1,6 @@
 # A Data Analysis of Climate-Responsive Social Protection
 
-**Who has protection when a climate shock hits — and who doesn't?**
+**Who has protection when a climate shock hits and who doesn't?**
 
 This project explores the global gap between climate vulnerability and social protection coverage across 192 countries. It was built as the final project for the [Ironhack Data Analysis Bootcamp](https://www.ironhack.com), March 2026.
 
@@ -14,7 +14,7 @@ This project explores the global gap between climate vulnerability and social pr
 
 > *When a climate shock hits — who has social protection, and who doesn't?*
 
-Climate-responsive social protection (CRSP) refers to social protection systems specifically designed to account for climate risk — not just general hardship, but the loss that happens when a drought wipes out a harvest or a flood destroys a livelihood. This analysis asks whether the countries most exposed to climate risk are the ones with systems designed to handle it.
+Climate-responsive social protection (CRSP) refers to social protection systems specifically designed to account for climate risk, not just general hardship, but the loss that happens when a drought wipes out a harvest or a flood destroys a livelihood. This analysis asks whether the countries most exposed to climate risk are the ones with systems designed to handle it.
 
 ---
 
@@ -57,7 +57,7 @@ Climate-responsive social protection (CRSP) refers to social protection systems 
 | World Development Indicators | World Bank | 17,000+ observations | GDP per capita, poverty ratio, life expectancy, health expenditure |
 | WIID / WID | UNU-WIDER / World Inequality Database | 11,800+ observations | Gini coefficient, Palma ratio, income shares |
 
-**Note:** Two intended datasets — ASPIRE (benefit adequacy) and UNICEF adaptive SP mechanisms — were unavailable as clean public datasets and are flagged as data gaps throughout the analysis.
+**Note:** Two intended datasets, ASPIRE (benefit adequacy) and UNICEF adaptive SP mechanisms, were unavailable as clean public datasets and are flagged as data gaps throughout the analysis.
 
 ---
 
@@ -102,9 +102,9 @@ A positive gap means a country is more vulnerable than it is protected. A negati
 ### Headline Findings
 
 - The geographic mismatch is systematic: Sub-Saharan Africa and South Asia score highest on vulnerability and lowest on coverage. Western Europe is the inverse.
-- **21 countries** sit in the Red Zone — high climate exposure, near-zero SP coverage.
-- Unemployment coverage is effectively **zero** across all income groups except high income — the benefit type most relevant to climate-disrupted livelihoods is the one that barely exists.
-- The **Central African Republic** — the single most vulnerable country in the dataset (CLVI 0.748) — has no SP data at all. The country the system most needs to monitor is invisible to it.
+- **21 countries** sit in the Red Zone: high climate exposure, near-zero SP coverage.
+- Unemployment coverage is effectively **zero** across all income groups except high income, the benefit type most relevant to climate-disrupted livelihoods is the one that barely exists.
+- The **Central African Republic**, the single most vulnerable country in the dataset (CLVI 0.748), has no SP data at all. The country the system most needs to monitor is invisible to it.
 - When controlling for GDP in regression, climate vulnerability alone loses statistical significance. **Poverty and climate vulnerability are the same structural problem.**
 
 ---
@@ -115,16 +115,16 @@ A positive gap means a country is more vulnerable than it is protected. A negati
 
 Six charts produced using Matplotlib and Plotly:
 
-1. **CLVI World Choropleth** — composite vulnerability scores across 192 countries
-2. **Protection Gap Map** — where vulnerability exceeds provision (and vice versa)
-3. **Quadrant Scatter** — physical exposure vs SP coverage, with four labelled zones (interactive HTML version available)
-4. **SP Coverage by Benefit Type and Income Group** — grouped bar chart showing which benefits exist where
-5. **Coverage Dot Plot by UN Region** — regional comparison across benefit types
-6. **Radar Profiles — Red Zone Countries** — vulnerability fingerprints for the 10 countries with the largest protection gap
+1. **CLVI World Choropleth**: composite vulnerability scores across 192 countries
+2. **Protection Gap Map** : where vulnerability exceeds provision (and vice versa)
+3. **Quadrant Scatter** : physical exposure vs SP coverage, with four labelled zones (interactive HTML version available)
+4. **SP Coverage by Benefit Type and Income Group** : grouped bar chart showing which benefits exist where
+5. **Coverage Dot Plot by UN Region** : regional comparison across benefit types
+6. **Radar Profiles :Red Zone Countries** : vulnerability fingerprints for the 10 countries with the largest protection gap
 
 All charts are available in `outputs/charts/`. The interactive quadrant scatter is available as `chart3_quadrant_scatter.html`.
 
-### Geographic Visualisations — Notebook 06
+### Geographic Visualisations: Notebook 06
 
 Six additional maps produced using **GeoPandas + Matplotlib**, offering publication-quality static output with precise layer control:
 
@@ -148,7 +148,7 @@ The full analysis is available as a **Tableau Public dashboard** with four inter
 - World map (toggle: CLVI score / SP coverage rate)
 - Quadrant scatter (hover any country for full profile)
 - SP coverage breakdown by benefit type and income group
-- Financing gap — health expenditure as proxy for domestic SP capacity
+- Financing gap: health expenditure as proxy for domestic SP capacity
 
 All views filterable by UN region and income group. No account needed.
 
@@ -171,11 +171,11 @@ Four countries selected by the data — not pre-selected:
 
 ## Assumptions & Limitations
 
-- **CLVI weighting:** The 50/50 split between physical and socioeconomic components is an assumption. Sensitivity analysis showed r > 0.99 across all alternative weightings — rankings are robust.
+- **CLVI weighting:** The 50/50 split between physical and socioeconomic components is an assumption. Sensitivity analysis showed r > 0.99 across all alternative weightings: rankings are robust.
 - **CAR protection gap:** The CAR has no SP coverage data. Its gap score uses median imputation. The CLVI is measured; the protection gap is inferred.
 - **Health expenditure proxy:** H4 uses health expenditure (% GDP) as a proxy for domestic SP financing capacity, as OCHA humanitarian financing data was unavailable.
-- **41% data gap:** The true Red Zone is likely larger than 21 countries. Countries with no SP data — including CAR, DRC, and Congo — could not be included in gap calculations.
-- **Coverage ≠ adequacy:** ILO SDG 1.3.1 measures whether people receive *any* benefit — not whether benefits are sufficient. The adequacy dimension of the gap is not quantified here.
+- **41% data gap:** The true Red Zone is likely larger than 21 countries. Countries with no SP data, including CAR, DRC, and Congo, could not be included in gap calculations.
+- **Coverage ≠ adequacy:** ILO SDG 1.3.1 measures whether people receive *any* benefit,  not whether benefits are sufficient. The adequacy dimension of the gap is not quantified here.
 
 ---
 
@@ -195,7 +195,7 @@ jupyter notebook notebooks/01_data_loading.ipynb
 
 Data files should be placed in `data/raw/` before running. Source links are included at the top of notebook 01.
 
-Notebook 06 (`06_geopandas_maps.ipynb`) downloads the Natural Earth shapefile automatically on first run — no manual download required. All GeoPandas maps are saved to `outputs/geopandas/`.
+Notebook 06 (`06_geopandas_maps.ipynb`) downloads the Natural Earth shapefile automatically on first run , no manual download required. All GeoPandas maps are saved to `outputs/geopandas/`.
 
 ---
 
@@ -203,8 +203,8 @@ Notebook 06 (`06_geopandas_maps.ipynb`) downloads the Natural Earth shapefile au
 
 The data points to three structural conclusions:
 
-1. **The gap is not incidental — it is structural.** A correlation of −0.743 between vulnerability and coverage is the accumulated result of where social infrastructure investment has and hasn't happened over decades.
-2. **Poverty and climate vulnerability are the same problem.** Designing climate resilience solutions without addressing the poverty trap will fail — in regression, the two are inseparable.
+1. **The gap is not incidental , it is structural.** A correlation of −0.743 between vulnerability and coverage is the accumulated result of where social infrastructure investment has and hasn't happened over decades.
+2. **Poverty and climate vulnerability are the same problem.** Designing climate resilience solutions without addressing the poverty trap will fail , in regression, the two are inseparable.
 3. **What we cannot see, we cannot fix.** 79 invisible countries is a political problem, not a technical one. Until the monitoring architecture reaches the places that need it most, evidence-based intervention is structurally impossible there.
 
 ---
