@@ -53,7 +53,7 @@ Climate-responsive social protection (CRSP) refers to social protection systems 
 |---|---|---|---|
 | ND-GAIN Country Index | Notre Dame Global Adaptation Initiative | 192 countries | Climate vulnerability & readiness scores |
 | World Risk Index (WRI) | Bündnis Entwicklung Hilft | 193 countries | Physical hazard exposure, coping & adaptive capacity |
-| ILOSTAT — SDG 1.3.1 | International Labour Organization | 36,000+ observations | Social protection coverage rates by benefit type |
+| ILOSTAT SDG 1.3.1 | International Labour Organization | 36,000+ observations | Social protection coverage rates by benefit type |
 | World Development Indicators | World Bank | 17,000+ observations | GDP per capita, poverty ratio, life expectancy, health expenditure |
 | WIID / WID | UNU-WIDER / World Inequality Database | 11,800+ observations | Gini coefficient, Palma ratio, income shares |
 
