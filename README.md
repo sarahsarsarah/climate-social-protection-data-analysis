@@ -131,9 +131,9 @@ Six additional maps produced using **GeoPandas + Matplotlib**, offering publicat
 | Map | File | Description |
 |---|---|---|
 | 1 | `map1_clvi_geopandas.png` | CLVI world choropleth with case study annotations |
-| 2 | `map2_protection_gap_geopandas.png` | Protection gap — diverging red/green scale |
+| 2 | `map2_protection_gap_geopandas.png` | Protection gap: diverging red/green scale |
 | 3 | `map3_sp_coverage_geopandas.png` | SP coverage rate by country |
-| 4 | `map4_invisibility_geopandas.png` | H5 — invisible countries coloured by CLVI score |
+| 4 | `map4_invisibility_geopandas.png` | H5  invisible countries coloured by CLVI score |
 | 5 | `map5_redzone_geopandas.png` | Red Zone countries isolated and coloured by protection gap |
 | 6 | `map6_sidebyside_geopandas.png` | CLVI and protection gap as a two-panel figure |
 
