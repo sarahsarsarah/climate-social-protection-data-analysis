@@ -198,7 +198,9 @@ Data files should be placed in `data/raw/` before running. Source links are incl
 Notebook 06 (`06_geopandas_maps.ipynb`) downloads the Natural Earth shapefile automatically on first run , no manual download required. All GeoPandas maps are saved to `outputs/geopandas/`.
 
 ---
-
+## Findings: Why the gap persists
+The mismatch between climate vulnerability and social protection coverage is not simply a funding shortfall; it reflects how social protection systems were originally designed. Most were built to respond to predictable, short-term hardship (unemployment, illness, old age), not the compounding, recurring shocks that climate change produces: a drought that returns for the third year running, or a flood that arrives before the last one has been rebuilt from. Retrofitting these systems for climate risk means rethinking eligibility, financing speed, and delivery infrastructure simultaneously, not just increasing budgets. This is likely part of why the Red Zone countries in this analysis cluster where state capacity is already stretched thin: the protection gap and the state-capacity gap are, in practice, the same gap.
+---
 ## Policy Conclusions
 
 The data points to three structural conclusions:
