@@ -12,7 +12,7 @@ This project explores the global gap between climate vulnerability and social pr
 
 ## The Research Question
 
-> *When a climate shock hits — who has social protection, and who doesn't?*
+When a climate shock hits, who has social protection, and who doesn't?
 
 Climate-responsive social protection (CRSP) refers to social protection systems specifically designed to account for climate risk, not just general hardship, but the loss that happens when a drought wipes out a harvest or a flood destroys a livelihood. This analysis asks whether the countries most exposed to climate risk are the ones with systems designed to handle it.
 
